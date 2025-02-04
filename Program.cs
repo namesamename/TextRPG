@@ -74,3 +74,15 @@ void PlayerInfo()
     Console.WriteLine($"체 력: {sta}");
     Console.WriteLine($"소지금: {gold} G");
 }
+
+void Inven()
+{
+    Console.WriteLine("<인벤토리>");
+    Console.WriteLine("보유 중인 아이템입니다.");
+    Console.WriteLine("\n");
+    Console.WriteLine("[아이템 목록]");
+    Console.WriteLine("\n");
+    Console.WriteLine("1. 장착 관리");
+    Console.WriteLine("0. 나가기");
+    HaveChoice();
+}
