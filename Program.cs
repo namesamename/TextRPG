@@ -44,3 +44,16 @@ void HaveChoice()
         Console.WriteLine("잘못된 입력입니다. 다시 입력해주세요.");
     }
 }
+
+void PrintInfo()
+{
+    Console.Clear();
+    Console.WriteLine("<상태 보기>");
+    Console.WriteLine($"ㅇㅇㅇ의 정보입니다.");
+    Console.WriteLine("\n");
+    
+    Console.WriteLine("\n");
+    Console.WriteLine("0. 나가기");
+    Console.WriteLine("\n");
+    HaveChoice();
+}
