@@ -51,9 +51,26 @@ void PrintInfo()
     Console.WriteLine("<상태 보기>");
     Console.WriteLine($"ㅇㅇㅇ의 정보입니다.");
     Console.WriteLine("\n");
-    
+    PlayerInfo();
     Console.WriteLine("\n");
     Console.WriteLine("0. 나가기");
     Console.WriteLine("\n");
     HaveChoice();
+}
+
+void PlayerInfo()
+{
+    int level = 1;
+    string chad = "전사";
+    int att = 10;
+    int def = 5;
+    int sta = 100;
+    int gold = 1500;
+
+    Console.WriteLine($"Lv. {level}");
+    Console.WriteLine($"chad ({chad})");
+    Console.WriteLine($"공격력: {att}");
+    Console.WriteLine($"방어력: {def}");
+    Console.WriteLine($"체 력: {sta}");
+    Console.WriteLine($"소지금: {gold} G");
 }
