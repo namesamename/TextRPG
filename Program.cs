@@ -72,7 +72,7 @@ void StartChoice()
         }
         else if (choice == 3)
         {
-            Console.WriteLine("3번 선택");
+            Store();
         }
         else
         {
@@ -127,3 +127,19 @@ void Inven()
     HaveChoice();
 }
 
+void Store()
+{
+    int gold = 800;
+
+    Console.WriteLine("<상점>");
+    Console.WriteLine("아이템 거래소입니다.");
+    Console.WriteLine("\n");
+    Console.WriteLine("[보유 골드]");
+    Console.WriteLine($"{gold} G");
+    Console.WriteLine("\n");
+    Console.WriteLine("[아이템 목록]");
+    Console.WriteLine("\n");
+    Console.WriteLine("1. 아이템 구매");
+    Console.WriteLine("0. 나가기");
+    HaveChoice();
+}
